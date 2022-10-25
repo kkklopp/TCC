@@ -20,7 +20,7 @@ body {
 
 a {
   color: #444444;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 a:hover {
@@ -64,6 +64,11 @@ h6 {
   margin-bottom: 0;
   font-weight: 600;
   color: #012970;
+}
+
+.index-title {
+  color: #fbcc24;
+  font-size: 24px;
 }
 
 /*--------------------------------------------------------------
@@ -135,6 +140,26 @@ h6 {
 .dropdown-menu .dropdown-divider {
   color: #a5c5fe;
   margin: 0;
+}
+
+.nav-link-menu {
+  color: #2c384e;
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  font-weight: 600;
+  transition: 0.3;
+  background: #f6f9ff;
+  padding: 10px 15px;
+  border-radius: 4px;
+}
+
+.nav-link-menu:hover {
+  color: #2c384e;
+}
+
+.sair:hover {
+  color: #e01125;
 }
 
 .dropdown-menu .dropdown-item {
@@ -367,13 +392,13 @@ h6 {
 
 .nav-tabs-bordered .nav-link:hover,
 .nav-tabs-bordered .nav-link:focus {
-  color: #4154f1;
+  color: #e01125;
 }
 
 .nav-tabs-bordered .nav-link.active {
   background-color: #fff;
-  color: #4154f1;
-  border-bottom: 2px solid #4154f1;
+  color: #e01125;
+  border-bottom: 2px solid #e01125;
 }
 
 /*--------------------------------------------------------------
@@ -414,9 +439,23 @@ h6 {
 
 .header .toggle-sidebar-btn {
   font-size: 32px;
-  padding-left: 10px;
+  padding: 10px;
   cursor: pointer;
+  color: #2c384e;
+}
+
+.header .toggle-sidebar-btn:hover {
+  font-size: 32px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.menu-item-superior:hover {
   color: #e01125;
+}
+
+.loginho {
+  padding-left: 15px;
 }
 
 .header .search-bar {
@@ -1256,14 +1295,3 @@ h6 {
   border-top: 1px solid #cddfff;
 }
 
-.footer .copyright {
-  text-align: center;
-  color: #012970;
-}
-
-.footer .credits {
-  padding-top: 5px;
-  text-align: center;
-  font-size: 13px;
-  color: #012970;
-}
